@@ -41,5 +41,21 @@ public class task1 {
         }
 
         System.out.println("\nTask 2: \n" + dominant);
+
+        int[] array3 = {1, 2, 3, 4, 5};
+        int positions = 2;
+        int n = array3.length;
+        int[] result3 = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            int newIndex = (i + positions) % n;
+            result3[newIndex] = array3[i];
+        }
+
+        System.out.print("Task 3 result: \n");
+        for (int i = 0; i < n; i++) {
+            System.out.print(result3[i] + " ");
+        }
+        System.out.println();
     }
 }
